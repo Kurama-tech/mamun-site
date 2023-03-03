@@ -11,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -32,18 +33,9 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
+    <header className="bg-white border-b">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Mamun!</span>
-            <img
-            className="h-20 w-auto" 
-            src="https://firebasestorage.googleapis.com/v0/b/mamun-public.appspot.com/o/Mamoon-fin.png?alt=media&token=3dddc35f-a7ab-4a68-969e-75ea7573b5fa"
-            alt="" />
-          </a>
-        </div>
-        <div className="flex lg:hidden">
+        <div className="flex order-1 lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -108,17 +100,29 @@ export default function Header() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Portfolio
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#about" className="text-sm font-semibold leading-6 text-gray-900">
             About
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Contact
           </a>
         </Popover.Group>
+        <div className="flex justify-center lg:flex-1">
+          <Link href="#home" className="-m-1.5 p-1.5">
+            <span className="sr-only">Ma&rsquo;mun!</span>
+            <img
+            className="w-auto h-12 lg:h-20" 
+            src="https://firebasestorage.googleapis.com/v0/b/mamun-public.appspot.com/o/Mamoon-2.png?alt=media&token=f13dcfec-6677-436a-94ff-712745d872a0"
+            alt="" />
+          </Link>
+        </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-           Get in Touch! <span aria-hidden="true">&rarr;</span>
-          </a>
+            <a
+                href="#"
+                className="rounded-md px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              >
+                Get in Touch!
+              </a>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -129,7 +133,7 @@ export default function Header() {
               <span className="sr-only">Mamun!</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://firebasestorage.googleapis.com/v0/b/mamun-public.appspot.com/o/Mamoon-2.png?alt=media&token=f13dcfec-6677-436a-94ff-712745d872a0"
                 alt=""
               />
             </a>
@@ -190,12 +194,12 @@ export default function Header() {
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Get in Touch!
-                </a>
+              <a
+                href="#"
+                className="rounded-md px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              >
+                Get in Touch!
+              </a>
               </div>
             </div>
           </div>
