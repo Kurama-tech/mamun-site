@@ -10,9 +10,9 @@ const Typer = () => {
   React.useEffect(() => {
     const options = {
     	strings: [
-        'Need an App?',
-        'Need a Busniess Website?',
-        'Need custom CRM&rsquo;s/Dashboard?',
+        'Build an App?',
+        'Develop a Busniess Website?',
+        'Build custom CRM&rsquo;s/Dashboard?',
         'Develop secure software?',
         'Upgrade your tech stack?',
         'Improve UX/UI?',
