@@ -18,7 +18,7 @@ function ListItem({ children }: Props) {
 
 export default function About() {
     return (
-        <div className="bg-white">
+        <div className="relative bg-white mx-auto max-w-7xl px-5 py-1 sm:px-1 sm:py-4 lg:px-1">
       <div className="mx-auto max-w-7xl py-1 sm:px-1 sm:py-4 lg:px-1">
       <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl text-center">
                 About Ma&rsquo;mun
