@@ -37,12 +37,12 @@ export default function Services() {
             <ListItem>Develop cross-platform App&rsquo;s</ListItem>
             <ListItem>Develop Secure Software/Websites</ListItem>
             <ListItem>Improve your UX/UI design</ListItem>
-            <ListItem>Provide SRE support / Manage Deployments</ListItem>
+            <ListItem>SRE / Manage Deployments</ListItem>
             <ListItem>On Prem Hosting</ListItem>
             </ul>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <a
-                href="#"
+                href="/services"
                 className="rounded-md w-25 px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Know More!

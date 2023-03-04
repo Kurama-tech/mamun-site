@@ -17,6 +17,7 @@ module.exports = {
         'white': '#ffffff',
         'purple': '#3f3cbb',
         'midnight': '#121063',
+        'lightgray': '#f9fbfa',
         'metal': '#565584',
         'tahiti': '#3ab7bf',
         'silver': '#ecebff',
@@ -25,5 +26,8 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+  ],
 }

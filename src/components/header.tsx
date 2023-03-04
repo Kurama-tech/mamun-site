@@ -3,26 +3,26 @@ import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
+  ArrowUpIcon
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, GlobeAltIcon, ServerIcon} from '@heroicons/react/20/solid'
 import Link from 'next/link'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'WebSite Development', description: 'Make your busniess grow with an amazing site that projects what you do!', href: '/services#website', icon: GlobeAltIcon },
+  { name: 'App Development', description: 'Build an Amazing Cross Platform App for your Needs', href: '/services#', icon: CursorArrowRaysIcon },
+  { name: 'Upgrade Legacy Software', description: 'Website/App/Software Slow? Upgrade with us for a very low price', href: '/services#', icon: ArrowUpIcon },
+  { name: 'UI/UX Designing', description: 'Make your customers happy by Providing them a great UI/UX', href: '/services#', icon: SquaresPlusIcon },
+  { name: 'SRE support/ Dev-ops', description: 'Tired of Pipelines? Cloud Accounts? Let us manage so that your can focus on your busniess', href: '/services#', icon: ArrowPathIcon },
+  { name: 'On Prem Hosting', description: 'Host your code on our state of the art servers', href: '/services#onprem', icon: ServerIcon },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Contact sales', href: '#talk', icon: PhoneIcon }
 ]
 
 function classNames(...classes: string[]) {
@@ -102,13 +102,13 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#portfolio" className="text-sm font-semibold leading-6 text-gray-900">
             Portfolio
           </a>
           <a href="#about" className="text-sm font-semibold leading-6 text-gray-900">
             About
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900">
             Contact
           </a>
         </Popover.Group>
@@ -123,7 +123,7 @@ export default function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-                href="#"
+                href="#talk"
                 className="rounded-md px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Get in Touch!
@@ -180,19 +180,19 @@ export default function Header() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="#portfolio"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Portfolio
                 </a>
                 <a
-                  href="#"
+                  href="#about"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </a>
                 <a
-                  href="#"
+                  href="#contact"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact
@@ -200,7 +200,7 @@ export default function Header() {
               </div>
               <div className="py-6">
               <a
-                href="#"
+                href="#talk"
                 className="rounded-md px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Get in Touch!

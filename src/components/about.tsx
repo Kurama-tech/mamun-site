@@ -23,7 +23,7 @@ export default function About() {
       <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl text-center">
                 About Ma&rsquo;mun
       </h2>
-      <div className="grid mt-5 sm:grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid px-5 mt-5 sm:grid-cols-1 md:grid-cols-2 gap-4">
         <div className="col-span-1 mb-5">
             <p className="bg-gray-200 p-4 text-lg leading-8 text-black text-justify">
             Welcome to Ma&rsquo;mun, your all-in-one software solutions provider! 
@@ -33,18 +33,25 @@ export default function About() {
             and we&rsquo;re here to make that happen for you.
             </p>
             <p className="bg-gray-200 p-4 mb-3 text-lg leading-8 text-white text-justify bg-primary rounded-xl">
-            With Ma&rsquo;mun, 
-            you can trust that your software needs are in good hands. 
-            Let us help you take your business to the next level with our comprehensive software solutions. 
-            Contact us today to get started!    
+            We are committed to delivering exceptional service and support to all our clients, 
+            ensuring that their software needs are always taken care of. 
+            When you choose Mamun, you can trust that you are working with a team that is dedicated to your success.
+            Join our growing list of satisfied clients and let us help you take your business to the next level!    
             </p>
             <br />
             </div>
         <div className="col-span-1 mb-5">
             <p className="bg-gray-200 p-4 text-lg leading-8 text-white text-justify bg-primary rounded-xl">
-            Ma&rsquo;mun is a limited liability company (LLC) based in the UAE, with a team of 10 experts who specialize in each of our core categories.
+            Ma&rsquo;mun is yet to be a limited liability company (LLC) based in the UAE, with a team of 10 experts who specialize in each of our core categories.
             Our team of experts has extensive experience in their respective fields, and they work together to provide secure end-to-end solutions.
 
+            </p>
+            <p className="bg-gray-200 p-4 text-lg leading-8 text-black text-justify">
+            At Mamun, we pride ourselves on building long-lasting relationships with our clients. 
+            With many clients in the UAE and worldwide, some of whom have been with us since 2010, 
+            we have a proven track record of delivering high-quality software solutions. 
+            Our team of experts works tirelessly to understand each client&rsquo;s 
+            unique needs and provide customized solutions that meet and exceed their expectations.
             </p>
             <br />
         </div>

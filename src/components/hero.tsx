@@ -17,12 +17,12 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
-                href="#"
+                href="#talk"
                 className="rounded-md px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Get in Touch!
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-black">
+              <a href="#services" className="text-sm font-semibold leading-6 text-black">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

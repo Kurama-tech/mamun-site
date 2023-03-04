@@ -5,6 +5,10 @@ import Hero from '@/components/hero'
 import Layout from '@/components/layout'
 import About from '@/components/about'
 import Services from '@/components/services'
+import Protfolio from '@/components/portfolio'
+import TrustedBy from '@/components/trustedby'
+import Contact from '@/components/contact'
+import ContactForm from '@/components/contactForm'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,8 +28,18 @@ export default function Home() {
         <div id='services'>
         <Services />
         </div>
+        <div id='portfolio'>
+          <Protfolio />
+        </div>
         <div id='about'>
         <About />
+        {/* <TrustedBy /> */}
+        </div>
+        <div id='contact'>
+          <Contact />
+        </div>
+        <div id='talk'>
+          <ContactForm />
         </div>
       </Layout>
     </>
