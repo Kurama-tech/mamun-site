@@ -158,7 +158,7 @@ const Data = [
     },
     {
         name: 'Managed Dev Ops',
-        key: 4,
+        key: 5,
         id: '#sre',
         description: 'Struggling with managing deployments? ',
         text: `
@@ -190,7 +190,7 @@ const Data = [
     },
     {
         name: 'Legacy to New Era',
-        key: 5,
+        key: 6,
         id: '#sre',
         description: 'Legacy slow softawre? Make it young! ',
         text: `

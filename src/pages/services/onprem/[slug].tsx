@@ -31,3 +31,18 @@ export default function Services() {
         </LayoutServices>
     </>)
 }
+
+// `getStaticPaths` requires using `getStaticProps`
+export async function getStaticProps(context: any) {
+    return {
+      // Passed to the page component as props
+      props: { post: {} },
+    }
+}
+
+export async function getStaticPaths() {
+    return {
+      paths: [{ params: { slug: '0' }}],
+      fallback: false, // can also be true or 'blocking'
+    }
+}
