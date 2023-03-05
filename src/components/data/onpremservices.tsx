@@ -2,6 +2,7 @@ import {LockClosedIcon, ArrowPathIcon, BoltIcon, DevicePhoneMobileIcon, Banknote
 const Data = [
     {
         name: 'On Prem Servers',
+        server: 'Server + Addons',
         key: 1,
         id: '#host',
         description: 'Host on Prem, Its cheaper than cloud',
@@ -27,6 +28,14 @@ const Data = [
                 {
                     id: 4,
                     name: 'Secured and Load Balanced',
+                },
+                {
+                    id: 5,
+                    name: 'Cpanel/Nginx',
+                },
+                {
+                    id: 6,
+                    name: 'Adons/Databases',
                 },
             ]
     }
