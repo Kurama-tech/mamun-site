@@ -10,6 +10,14 @@
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "destination": "/services/dev/[slug].html",
+        "regex": "^/services/dev/([^/]+?)(?:/)?$"
+      },
+      {
+        "destination": "/services/onprem/[slug].html",
+        "regex": "^/services/onprem/([^/]+?)(?:/)?$"
       }
     ]
   }
