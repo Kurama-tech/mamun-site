@@ -12,11 +12,11 @@
         "destination": "/index.html"
       },
       {
-        "destination": "/services/dev/[slug].html",
+        "destination": "/services/dev/[slug]/index.html",
         "regex": "^/services/dev/([^/]+?)(?:/)?$"
       },
       {
-        "destination": "/services/onprem/[slug].html",
+        "destination": "/services/onprem/[slug]/index.html",
         "regex": "^/services/onprem/([^/]+?)(?:/)?$"
       }
     ]
