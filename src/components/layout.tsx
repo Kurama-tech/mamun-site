@@ -3,7 +3,6 @@ import Footer, { FooterServices } from './footer'
 import { ReactNode } from 'react'
 import BreadCrumbs from './services/BreadCrumbs'
 
-
 interface Props {
     children?: ReactNode
     // any props that come into the component

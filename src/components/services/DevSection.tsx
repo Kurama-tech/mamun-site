@@ -1,21 +1,51 @@
 import { features } from "process"
-import Data from "../data/services"
+import { useEffect } from "react"
+import Data from "../data/devservices"
 
-export default function SectionWithImg() {
+interface Point {
+    name: string
+    description: string
+    icon: any
+}
+  
+  interface Service {
+    name: string
+    key: number
+    id: string
+    description: string
+    text: string
+    pricing: string
+    imageSrc: string
+    imageAlt: string
+    button: string
+    buttonhref: string
+    points: Point[]
+}
+
+interface Mother {
+    service: Service
+}
+
+export default function DevSection({service}: Mother) {
   return (
     <div>
-    {Data.map((service) => {
-    return (
+    {/* {Data.map((service) => {
+    return ( */}
     <div className="overflow-hidden bg-white py-24 sm:py-32" id={service.id} key={service.key}>
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div className="lg:pr-8 lg:pt-4">
         <div className="lg:max-w-lg">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">{service.discription}</h2>
+            <h2 className="text-base font-semibold leading-7 text-primary">{service.description}</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{service.name}</p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
             {service.text}
             </p>
+            <p className="text-base mt-5 font-semibold text-primary">Starts From Just</p>
+                <p className="mt-6 flex items-baseline justify-start gap-x-2">
+                  <span className="text-5xl font-bold tracking-tight text-primary">{service.pricing}</span>
+                  <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">AED</span>
+                </p>
             <div className="mt-5">
             <a
                 href={service.buttonhref}
@@ -46,8 +76,8 @@ export default function SectionWithImg() {
         />
     </div>
     </div>
-    </div>)
-    })}
+    </div> {/* )
+     })} */}
     </div>
   )
 }

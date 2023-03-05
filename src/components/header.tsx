@@ -7,19 +7,22 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-  ArrowUpIcon
+  ArrowUpIcon,
+  ComputerDesktopIcon,
+  DevicePhoneMobileIcon
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, GlobeAltIcon, ServerIcon} from '@heroicons/react/20/solid'
 import Link from 'next/link'
 
 const products = [
-  { name: 'WebSite Development', description: 'Make your busniess grow with an amazing site that projects what you do!', href: '/services#website', icon: GlobeAltIcon },
-  { name: 'App Development', description: 'Build an Amazing Cross Platform App for your Needs', href: '/services#', icon: CursorArrowRaysIcon },
-  { name: 'Upgrade Legacy Software', description: 'Website/App/Software Slow? Upgrade with us for a very low price', href: '/services#', icon: ArrowUpIcon },
-  { name: 'UI/UX Designing', description: 'Make your customers happy by Providing them a great UI/UX', href: '/services#', icon: SquaresPlusIcon },
-  { name: 'SRE support/ Dev-ops', description: 'Tired of Pipelines? Cloud Accounts? Let us manage so that your can focus on your busniess', href: '/services#', icon: ArrowPathIcon },
-  { name: 'On Prem Hosting', description: 'Host your code on our state of the art servers', href: '/services#onprem', icon: ServerIcon },
+  { name: 'WebSite Development', description: 'Make your busniess grow with an amazing site that projects what you do!', href: '/services/dev/0', icon: GlobeAltIcon },
+  { name: 'Software Development', description: 'Build a Software and Automate your busniess needs!', href: '/services/dev/1', icon: ComputerDesktopIcon },
+  { name: 'App Development', description: 'Build an Amazing Cross Platform App for your Needs', href: '/services/dev/2', icon: DevicePhoneMobileIcon },
+  { name: 'Upgrade Legacy Software', description: 'Website/App/Software Slow? Upgrade with us for a very low price', href: '/services/dev/5', icon: ArrowUpIcon },
+  { name: 'UI/UX Designing', description: 'Make your customers happy by Providing them a great UI/UX', href: '/services/dev/3', icon: SquaresPlusIcon },
+  { name: 'SRE support/ Dev-ops', description: 'Tired of Pipelines? Cloud Accounts? Let us manage so that your can focus on your busniess', href: '/services/dev/4', icon: ArrowPathIcon },
+  { name: 'On Prem Hosting', description: 'Host your code on our state of the art servers', href: '/services/onprem/0', icon: ServerIcon },
 ]
 const callsToAction = [
   { name: 'Contact sales', href: '#talk', icon: PhoneIcon }
