@@ -70,9 +70,7 @@ export default function DevSection({service}: Mother) {
         <img
         src={service.imageSrc}
         alt={service.imageAlt}
-        className="w-[48rem] max-w-none sm:w-[57rem] md:-ml-4 lg:-ml-0"
-        width={2432}
-        height={1442}
+        className="w-[25rem] max-w-none lg:w-[40rem] md:-ml-4 lg:-ml-0"
         />
     </div>
     </div>

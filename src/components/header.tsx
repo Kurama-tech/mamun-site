@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect, forwardRef } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -14,6 +14,8 @@ import {
 import Image from 'next/image'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, GlobeAltIcon, ServerIcon} from '@heroicons/react/20/solid'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { Url } from 'next/dist/shared/lib/router/router'
 
 const products = [
   { name: 'WebSite Development', description: 'Make your busniess grow with an amazing site that projects what you do!', href: '/services/dev/0', icon: GlobeAltIcon },
@@ -33,7 +35,13 @@ function classNames(...classes: string[]) {
 }
 
 export default function Header() {
+  const router = useRouter()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  
+  
+  function OnRouteChange(link: any){
+    router.push(link)
+  }
 
   return (
     <header className="bg-white border-b">
@@ -116,7 +124,7 @@ export default function Header() {
           </a>
         </Popover.Group>
         <div className="flex justify-center lg:flex-1">
-          <Link href="#home" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Ma&rsquo;mun!</span>
             <img
             className="w-auto h-12 lg:h-20" 
@@ -137,14 +145,14 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Mamun!</span>
               <img
                 className="h-8 w-auto"
                 src="https://firebasestorage.googleapis.com/v0/b/mamun-public.appspot.com/o/Mamoon-2.png?alt=media&token=f13dcfec-6677-436a-94ff-712745d872a0"
                 alt=""
               />
-            </a>
+            </Link>
               <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -181,21 +189,25 @@ export default function Header() {
                       </Disclosure.Panel>
                     </>
                   )}
+                
                 </Disclosure>
                 <a
-                  href="#portfolio"
-                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Portfolio
-                </a>
-                <a
+                  onClick={()=>{setMobileMenuOpen(false)}}
                   href="#about"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </a>
                 <a
+                  onClick={()=>{setMobileMenuOpen(false)}}
+                  href="#portfolio"
+                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Portfolio
+                </a>
+                <a
                   href="#contact"
+                  onClick={()=>{setMobileMenuOpen(false)}}
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact
@@ -204,6 +216,7 @@ export default function Header() {
               <div className="py-6">
               <a
                 href="#talk"
+                onClick={()=>{setMobileMenuOpen(false)}}
                 className="rounded-md px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Get in Touch!

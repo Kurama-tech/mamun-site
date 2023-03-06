@@ -13,7 +13,7 @@ const data = [
     ]  },
     { id: 3, label: 'Apps', content: [
         {id: 1, name: 'My Safety plan', imageSrc: '/safety.png', imageAlt: 'my safety plan', description: 'A Safety planning app for US based hospital'},
-        {id: 1, name: 'Mewah!', imageSrc: '/mewah2.png', imageAlt: 'Mewah', description: 'A Food ordering App'}
+        {id: 2, name: 'Mewah!', imageSrc: '/mewah2.png', imageAlt: 'Mewah', description: 'A Food ordering App'}
     ] },
 ]
 

@@ -192,7 +192,7 @@ const Data = [
         name: 'Legacy to New Era',
         key: 6,
         id: '#sre',
-        description: 'Legacy slow softawre? Make it young! ',
+        description: 'Legacy / slow softawre? Make it young! ',
         text: `
         Mamun specializes in upgrading outdated legacy software to modern technology standards. Our team of experts will analyze your existing software, identify its weaknesses, and suggest the necessary upgrades to make it more efficient, user-friendly, and secure. We use the latest technologies and tools to make sure your software is up-to-date and performing at its best.
         `,
