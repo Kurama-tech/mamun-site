@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Head>
         <title>Ma&rsquo;mun! | Custom Software Development, App Development, UI/UX Designs, Managed DevOps Services</title>
-        <meta name="description" content="Mamun LLC is a UAE-based company that provides custom software development, app development, UI/UX designs, managed DevOps services, and on-premises hosting. With over 10 years of experience and a team of 10 experts, we help businesses of all sizes streamline their operations, increase efficiency, and improve user experience. Contact us for a free consultation." />
+        <meta name="description" content="Mamun is a UAE-based company that provides custom software development, app development, UI/UX designs, managed DevOps services, and on-premises hosting. With over 10 years of experience and a team of 10 experts, we help businesses of all sizes streamline their operations, increase efficiency, and improve user experience. Contact us for a free consultation." />
         <meta name="keywords" content="mamun, ma'mun, software dev, website dev cheap software,custom software development, app development, UI/UX designs, managed DevOps services, on-premises hosting, UAE, Mamun" />
         <meta name="author" content="Mamun" />
         <meta name="keywords" content="User interface design,
@@ -55,6 +55,11 @@ export default function Home() {
           <meta name="keywords" content="IT solutions, IT services, custom software development, app development, UI/UX designs, managed DevOps services, on-premises hosting, Mamun LLC"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       </Head>
       <Layout>
         <div id='home'>
