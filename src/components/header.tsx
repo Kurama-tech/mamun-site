@@ -23,7 +23,7 @@ const products = [
   { name: 'App Development', description: 'Build an Amazing Cross Platform App for your Needs', href: '/services/dev/2', icon: DevicePhoneMobileIcon },
   { name: 'Upgrade Legacy Software', description: 'Website/App/Software Slow? Upgrade with us for a very low price', href: '/services/dev/5', icon: ArrowUpIcon },
   { name: 'UI/UX Designing', description: 'Make your customers happy by Providing them a great UI/UX', href: '/services/dev/3', icon: SquaresPlusIcon },
-  { name: 'SRE support/ Dev-ops', description: 'Tired of Pipelines? Cloud Accounts? Let us manage so that your can focus on your busniess', href: '/services/dev/4', icon: ArrowPathIcon },
+  { name: 'Managed DevOps', description: 'Tired of Pipelines? Cloud Accounts? Let us manage so that your can focus on your busniess', href: '/services/dev/4', icon: ArrowPathIcon },
   { name: 'On Prem Hosting', description: 'Host your code on our state of the art servers', href: '/services/onprem/0', icon: ServerIcon },
 ]
 const callsToAction = [
