@@ -49,13 +49,13 @@ const Contact = () => {
                 </p>
                 <div className='text-lg px-5 mb-5 text-primary font-bold'>
                 <div className="flex justify-start space-x-4">
-                    <a href="#" className="text-gray-600 hover:text-gray-800">
+                    <a target={'_blank'} href="https://www.facebook.com/mamunsoftwareuae/" className="text-gray-600 hover:text-gray-800">
                         <FaFacebook size={24} />
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-gray-800">
+                    <a target={'_blank'} href="https://github.com/Kurama-tech" className="text-gray-600 hover:text-gray-800">
                         <FaGithub size={24} />
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-gray-800">
+                    <a target={'_blank'} href="https://www.linkedin.com/company/kuramatech" className="text-gray-600 hover:text-gray-800">
                         <FaLinkedin size={24} />
                     </a>
                 </div>
