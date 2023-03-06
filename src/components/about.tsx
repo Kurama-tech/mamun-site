@@ -42,7 +42,7 @@ export default function About() {
             </div>
         <div className="col-span-1 mb-5">
             <p className="bg-gray-200 p-4 text-lg leading-8 text-white text-justify bg-primary rounded-xl">
-            Ma&rsquo;mun is yet to be a limited liability company (LLC) based in the UAE, with a team of 10 experts who specialize in each of our core categories.
+            Ma&rsquo;mun is yet to be a FZ (LLC) based in the UAE, with a team of 10 experts who specialize in each of our core categories.
             Our team of experts has extensive experience in their respective fields, and they work together to provide secure end-to-end solutions.
 
             </p>

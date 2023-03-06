@@ -21,8 +21,9 @@ export default function Services() {
     return (
     <>
         <Head>
-        <title>Ma&rsquo;mun! on prem Services</title>
+        <title>Ma&rsquo;mun! | Custom Software Development, App Development, UI/UX Designs, Managed DevOps Services</title>
         <meta name="description" content="On Prem Services By Mamun" />
+        <meta name="description" content="Mamun provides reliable on-premises hosting services for businesses that require greater control and security over their hosting environments. Our team of experts delivers customized hosting solutions that meet your business needs and ensure maximum uptime and reliability."></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
