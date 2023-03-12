@@ -2,13 +2,13 @@
 # uses ubi minimal image to build and httpd as the server
 
 # Use an official Red Hat UBI minimal runtime as a parent image
-FROM registry.access.redhat.com/ubi8/ubi-minimal
+FROM nginx:alpine
 
 # Set the working directory to /app
-WORKDIR /app
-USER root
+#WORKDIR /app
+#USER root
 # Install dependencies
-RUN microdnf install nginx 
+#RUN microdnf install nginx 
 
 # Copy the default Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
