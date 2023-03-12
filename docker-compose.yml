@@ -3,5 +3,13 @@ services:
   mamun-site:
     build: .
     ports:
-      - "80:80"
       - "3000:3000"
+  proxy:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.proxy
+    depends_on:
+     - mamun-site
+    ports:
+      -  "80:80"
+

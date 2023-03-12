@@ -1,7 +1,7 @@
 #!/bin/sh
 set -ex
 
-nginx
+#nginx
 
 pm2-runtime start npm --name "mamun" -- start
 
