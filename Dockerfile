@@ -15,7 +15,7 @@ COPY . /app
 #RUN microdnf module enable nodejs:14
 #RUN microdnf install nodejs
 #RUN npm cache verify
-RUN npm install 
+RUN npm install --unsafe-perm=true --allow-root
 RUN npm run build
 RUN npm install -g pm2
 
