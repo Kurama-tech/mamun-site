@@ -6,7 +6,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1-98
 
 # Set the working directory to /app
 WORKDIR /app
-USER root
+USER 1001
 
 # Copy the current directory contents into the container at /app
 COPY . /app
@@ -15,7 +15,7 @@ COPY . /app
 #RUN microdnf module enable nodejs:14
 #RUN microdnf install nodejs
 #RUN npm cache verify
-RUN npm install --unsafe-perm=true --allow-root
+RUN npm install
 RUN npm run build
 RUN npm install -g pm2
 
