@@ -14,7 +14,7 @@ COPY . /app
 # Install dependencies
 RUN microdnf module enable nodejs:14
 RUN microdnf install nodejs
-
+RUN npm update -g 
 RUN npm install 
 RUN npm run build
 RUN npm install -g pm2
