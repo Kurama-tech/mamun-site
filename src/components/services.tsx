@@ -41,12 +41,12 @@ export default function Services() {
             <ListItem>On Prem Hosting</ListItem>
             </ul>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-            <a
+            {/* <a
                 href="/services"
                 className="rounded-md w-25 px-3.5 bg-primary py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Know More!
-              </a>
+              </a> */}
             </div>
             </div>
             </div>
