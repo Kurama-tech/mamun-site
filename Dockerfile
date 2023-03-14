@@ -6,6 +6,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1-98
 
 # Set the working directory to /app
 WORKDIR /app
+RUN chown -R 1001:0 /app
 USER 1001
 
 # Copy the current directory contents into the container at /app
