@@ -18,7 +18,7 @@ COPY . /app
 #RUN npm cache verify
 RUN npm install
 
-RUN chown -R 1001:0 /app/
+RUN chown -R 1001:0 /app/public
 USER 1001
 
 RUN npm run build
